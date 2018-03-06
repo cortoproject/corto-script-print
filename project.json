@@ -1,0 +1,13 @@
+{
+    "id": "corto/script/to_string",
+    "type": "package",
+    "value": {
+        "description": "Making the world a better place",
+        "author": "Arthur Dent",
+        "version": "1.0.0",
+        "language": "c",
+        "c4cpp": true,
+        "managed": false,
+        "use": ["corto/script/parser", "antlr4/cpp", "corto"]
+    }
+}
