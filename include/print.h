@@ -9,6 +9,6 @@
 #include <corto/corto.h>
 #include <antlr4/cpp/cpp.h>
 #include <corto/script/parser/parser.h>
-#include <corto/script/to_string/CortoStringVisitor.h>
+#include <corto/script/print/CortoStringVisitor.h>
 
 #endif

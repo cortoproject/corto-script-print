@@ -1,4 +1,4 @@
-#include "corto/script/to_string/to_string.h"
+#include "corto/script/print/print.h"
 using namespace antlrcpp;
 
 Any CortoStringVisitor::visitDeclaration(CortoParser::DeclarationContext *ctx) {
@@ -31,16 +31,12 @@ Any CortoStringVisitor::visitObject_identifier(CortoParser::Object_identifierCon
 }
 
 Any CortoStringVisitor::visitInitializer_assignment(CortoParser::Initializer_assignmentContext *ctx) {
-    corto_log_push("initializer_assignment");
     Any result = visitChildren(ctx);
-    corto_log_pop();
     return result;
 }
 
 Any CortoStringVisitor::visitInitializer_expression(CortoParser::Initializer_expressionContext *ctx) {
-    corto_log_push("initializer_expression");
     Any result = visitChildren(ctx);
-    corto_log_pop();
     return result;
 }
 
@@ -59,9 +55,7 @@ Any CortoStringVisitor::visitInitializer_collection(CortoParser::Initializer_col
 }
 
 Any CortoStringVisitor::visitInitializer_list(CortoParser::Initializer_listContext *ctx) {
-    corto_log_push("initializer_list");
     Any result = visitChildren(ctx);
-    corto_log_pop();
     return result;
 }
 
